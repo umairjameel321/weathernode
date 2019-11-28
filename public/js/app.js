@@ -22,7 +22,7 @@ weatherForm.addEventListener('submit', (event) => {
             } else {
                 console.log(data);
                 messageOne.textContent = data.location;
-                messageTwo.textContent = data.data.Summary.summary;
+                messageTwo.textContent = data.data.Summary.summary + "   Temperature: " + data.data.Temperature.temperature;
             }   
         })
     })
